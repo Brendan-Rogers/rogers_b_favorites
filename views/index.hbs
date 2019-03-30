@@ -1,11 +1,11 @@
-<section id="heroes">
-    {{#each avatars}}
-        <div class="hero-container">
+<section id="apps">
+    {{#each webApps}}
+        <div class="app-container">
             <a href="/{{name}}">
-                <img src="/images/{{avatar}}" alt="avatar">
+                <img src="/images/{{img}}" alt="app image">
             </a>
 
-            <h3 class="hero-name">{{name}}</h3>
+            <h3 class="app-name">// {{name}}</h3>
         </div>        
     {{/each}}
 </section>

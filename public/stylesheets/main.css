@@ -58,35 +58,82 @@ footer {
   padding-top: 1rem;
 }
 
-#heroes {
+#apps {
   text-align: center;
   margin-top: 20px;
 }
 
-.hero-container {
-  border-radius: 1rem;
+.app-container {
+  border-radius: 7px;
   overflow: hidden;
   display: inline-block;
   text-align: center;
   margin: 0 12px 20px;
-  border: 2px solid white;
+  border: 2px solid #1eff5a;
   background: #000000;
+  transition: 0.2s all ease;
 }
-.hero-container img {
+.app-container img {
   width: 100%;
 }
-.hero-container h3 {
+.app-container h3 {
   font-size: 1.5rem;
   padding: 8px;
 }
 
-.hero-container:last-of-type {
+.app-container:hover {
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+.app-container:last-of-type {
   margin-bottom: 120px;
 }
 
 @media screen and (min-width: 1032px) {
-  .hero-container:last-of-type {
+  .app-container:last-of-type {
     margin-bottom: 20px;
+  }
+}
+.app-name {
+  font-size: 1.5em;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex div {
+  width: 45vw;
+  margin-top: 3em;
+}
+
+.flex img {
+  display: block;
+  margin: 0 auto;
+}
+
+.flex h3 {
+  margin-top: 1em;
+}
+
+.goBack i {
+  color: #1eff5a;
+  margin-left: 1em;
+  margin-top: 1em;
+  font-size: 2em;
+  transition: 0.1s all ease;
+}
+
+.goBack i:hover {
+  font-size: 2.5em;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .flex {
+    flex-direction: column;
   }
 }
 a {

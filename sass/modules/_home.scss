@@ -44,24 +44,35 @@ footer {
     padding-top: 1rem;
 }
 
-#heroes { text-align: center; margin-top: 20px; }
+#apps { text-align: center; margin-top: 20px; }
 
-.hero-container { 
-    border-radius: 1rem; 
+.app-container { 
+    border-radius: 7px; 
     overflow: hidden; 
     display: inline-block; 
     text-align: center;
     margin: 0 12px 20px;
-    border: 2px solid white;
+    border: 2px solid $text-color;
     background: $bg-color;
 
     img { width: 100%; }
 
     h3 { font-size: 1.5rem; padding: 8px;}
+
+    transition: 0.2s all ease;
 }
 
-.hero-container:last-of-type { margin-bottom: 120px; }
+.app-container:hover {
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+.app-container:last-of-type { margin-bottom: 120px; }
 
 @media screen and (min-width: 1032px) {
-    .hero-container:last-of-type { margin-bottom: 20px; }
+    .app-container:last-of-type { margin-bottom: 20px; }
+}
+
+.app-name {
+    font-size: 1.5em;
 }
