@@ -1,0 +1,36 @@
+.flex {
+	display: flex;
+	justify-content: space-around;
+}
+
+.flex div {
+	width: 45vw;
+	margin-top: 3em;
+}
+.flex img {
+	display: block;
+	margin: 0 auto;
+}
+
+.flex h3 {
+	margin-top: 1em;
+}
+
+.goBack i {
+	color: $text-color;
+	margin-left: 1em;
+	margin-top: 1em;
+	font-size: 2em;
+	transition: 0.1s all ease;
+}
+
+.goBack i:hover {
+	font-size: 2.5em;
+	color: white;
+}
+
+@media screen and (max-width: 600px) {
+	.flex {
+		flex-direction: column;
+	}
+}
